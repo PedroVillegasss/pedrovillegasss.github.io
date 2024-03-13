@@ -1,9 +1,8 @@
-.personal-information {
+.personal-information-div {
     font-family: "San Francisco", Arial, sans-serif;
 }
 
 #title {
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,18 +16,53 @@
 
 td {
     text-align: center;
-    width: 33.33%;
     border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .image {
-    block-size: 30px;
+    block-size: 45px;
     align-content: center;
+    margin-top: 3px;
     margin: 10px;
 }
 
-.social-media {
+.social-media-div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.personal-information-div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.personal-summary-div {
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
