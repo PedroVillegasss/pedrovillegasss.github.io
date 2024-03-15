@@ -58,11 +58,19 @@ td {
 
 .button-div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 body {
     background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.input-text {
+    color: white;
+    font-size: 69px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

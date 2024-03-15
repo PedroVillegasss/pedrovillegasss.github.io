@@ -14,7 +14,8 @@
     </div>
     
     <div class="personal-summary-div">
-        <p><b>Personal summary</b></p>
+        <p><b>Pedro, debido a su pasión por el mundo de la tecnología y la computación, ingresa el 2021 a la carrera de Ingeniería Civil en Ciencias de la Computación de la Universidad de los Andes.</b></p>
+        <p><b>Entre sus actividades favoritas se encuentra la música y la programación.</b></p>
     </div>
 
     <div class="table-div">
@@ -26,7 +27,7 @@
             
             <tr class="grey-row">
                 <td>Python</td>
-                <td>Advance</td>
+                <td>High</td>
             </tr>
     
             <tr>
@@ -41,12 +42,12 @@
     
             <tr>
                 <td>Git</td>
-                <td>Advance</td>
+                <td>High</td>
             </tr>
     
             <tr class="grey-row">
                 <td>Excel</td>
-                <td>Advance</td>
+                <td>High</td>
             </tr>
     
             <tr>
@@ -61,7 +62,7 @@
     
             <tr>
                 <td>English</td>
-                <td>B2</td>
+                <td>Medium</td>
             </tr>
     
             <tr class="grey-row">
@@ -71,14 +72,25 @@
         </table>
     </div>
 
-    <div class="button-div">
-        <button>Esto es un boton <input type="text" name="boton" id="input-text"></button>
-    </div>
-
     <div class="social-media-div">
         <p> <a href="https://github.com/PedroVillegasss"> <img class="image" src="images/github-mark.png" alt="GitHub"></a></p>
         <p> <a href="https://www.linkedin.com/in/pedro-pablo-villegas-celis-360589299/"> <img class="image" src="images/LI-In-Bug.png" alt="GitHub"></a></p>
     </div>
+    
+    <div class="button-div">
+        <button onclick="añadirTexto()">Esto es un boton interactivo, presione para agregar texto</button>
+        <input type="text" name="boton" id="input-text">
+    </div>
 
+    <script>
+        function añadirTexto() {
+            var text = document.getElementById("input-text").value;
+            var buttonDiv = document.querySelector(".button-div");
+            var parrafo = document.createElement("p");
+            parrafo.textContent = text;
+            parrafo.classList.add("input-text");
+            buttonDiv.appendChild(parrafo);
+        }
+    </script>
 </body>
 </html>
