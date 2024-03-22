@@ -96,3 +96,11 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.d-flex_align-items-center {
+    color:white;
+}
+
+#porcentaje-carrera {
+    color:white;
+}
